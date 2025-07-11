@@ -1,9 +1,25 @@
-<svg width="374" height="374" viewBox="0 0 374 374" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_64_252" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="374" height="374">
-<circle cx="186.514" cy="187.446" r="186.5" transform="rotate(90 186.514 187.446)" fill="#D9D9D9"/>
+<svg width="797" height="725" viewBox="0 0 797 725" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_68_204" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="151" y="118" width="495" height="496">
+<circle cx="398.451" cy="365.687" r="247.366" transform="rotate(90 398.451 365.687)" fill="#D9D9D9"/>
 </mask>
-<g mask="url(#mask0_64_252)">
-<path d="M251.238 185.049L-24.9167 344.487L-24.9167 25.6115L251.238 185.049Z" fill="#FF0C0C"/>
-<path d="M120.831 185.049L396.986 25.6116L396.986 344.487L120.831 185.049Z" fill="#FF0C0C"/>
+<g mask="url(#mask0_68_204)">
+<path d="M484.298 362.508L118.019 573.979L118.019 151.037L484.298 362.508Z" fill="#FF0000"/>
+<path d="M311.333 362.508L677.612 151.036L677.612 573.979L311.333 362.508Z" fill="#FF0000"/>
 </g>
+<g style="mix-blend-mode:plus-lighter" filter="url(#filter0_f_68_204)">
+<mask id="mask1_68_204" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="151" y="118" width="495" height="496">
+<circle cx="398.451" cy="365.687" r="247.366" transform="rotate(90 398.451 365.687)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask1_68_204)">
+<path d="M484.298 362.508L118.019 573.979L118.019 151.037L484.298 362.508Z" fill="#FF2424" fill-opacity="0.63"/>
+<path d="M311.333 362.508L677.612 151.036L677.612 573.979L311.333 362.508Z" fill="#FF2424" fill-opacity="0.63"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_68_204" x="0.278351" y="0.229523" width="796.345" height="724.557" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75.4034" result="effect1_foregroundBlur_68_204"/>
+</filter>
+</defs>
 </svg>

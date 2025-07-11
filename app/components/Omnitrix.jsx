@@ -23,32 +23,41 @@ useEffect(() => {
 }, []);
 const screen = {
     on : <div className=''>
-            <img ref={onScreenRef} className="fixed max-sm:scale-[2]  w-[17.5vw] max-sm:translate-y-[37vh]  top-[15.66vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screen.svg"/>
+            <img ref={onScreenRef} className="fixed max-sm:scale-[3.18] max-sm:translate-y-[37.2vh] w-[17.5vw] top-[15.66vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screen.svg"/>
     </div>,
 
     off : <div className=''>
-             <img ref={offScreenRef} className="fixed w-[17.5vw] max-sm:scale-[2] max-sm:translate-y-[37vh]  top-[15.7vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screenreset.svg"/> 
+             <img ref={offScreenRef} className="fixed w-[17.5vw] max-sm:scale-[3.18] max-sm:translate-y-[37.2vh]  top-[15.7vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screenreset.svg"/> 
     </div> ,
 
     reset :<div>
-        <img ref={resetScreenRef} className="fixed w-[17.5vw] max-sm:scale-[2] max-sm:translate-y-[37vh]  top-[15.7vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screenred.svg"/> 
+        <img ref={resetScreenRef} className="fixed w-[17.5vw] max-sm:scale-[3.18] max-sm:translate-y-[37.2vh]  top-[15.7vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screenred.svg"/> 
     </div> ,
-    
+//   <div>
+//         <img ref={resetScreenRef} className="fixed w-[17.5vw] max-sm:scale-[2] max-sm:translate-y-[37vh]  top-[15.7vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screenred.svg"/> 
+//     </div>   
        
 }
 let currentScreen;
 useEffect(()=>{
 switch (watchState) {
   case 'ON':
+    onScreenRef.current.style.opacity = 1
     offScreenRef.current.style.opacity = '0'
+    resetScreenRef.current.style.opacity = '0'
+
 
     break;
   case 'OFF':
      offScreenRef.current.style.opacity = 1
-    onScreenRef.current.style.opacity = 1
+    onScreenRef.current.style.opacity = 0
+    resetScreenRef.current.style.opacity = 0
+
 
     break;
   case 'RESET':
+    resetScreenRef.current.style.opacity = 1
+
     offScreenRef.current.style.opacity = '0'
     onScreenRef.current.style.opacity = '0'
 

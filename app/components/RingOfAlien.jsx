@@ -58,7 +58,7 @@ export default function RingOfAlien({ totalPoints = 8, dotVw = 10.4, alienVw = 1
 
             {/* Active dot */}
             <div
-              className="lg:w-2 w-[5px] opacity-75 lg:h-2 h-[5px] bg-green-400 z-[200] rounded-full absolute"
+              className="lg:w-2 w-[5px] opacity-75 lg:h-2 h-[5px] bg-[#c3ff00] z-[200] rounded-full absolute"
               style={{
                 opacity: img.isOpen ? 1 : 0,
                 left: `${dotX}px`,
