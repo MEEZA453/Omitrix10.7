@@ -6,8 +6,17 @@ export default function StoryOfAlien(){
 
 
     return <div>
-    
-        <img src ='/image2.webp' className="w-screen h-[100vw] object-cover"/>
+    <div className="h-screen w-screen bg-[#ffffff]"></div>
+    <div className="h-screen w-screen bg-[#ffffff]"></div>
+    <div className="h-screen w-screen bg-[#ffffff]"></div>
+    <div className="h-screen w-screen bg-[#ffffff]"></div>
+    <div className="h-screen w-screen bg-[#ffffff]"></div>
+    <div className="h-screen w-screen bg-[#ffffff]"></div>
+    <div className="h-screen w-screen bg-[#ffffff]"></div>
+    <div className="h-screen w-screen bg-[#ffffff]"></div>
+
+
+        {/* <img src ='/image2.webp' className="w-screen h-[100vw] object-cover"/>
         <img src ='/image3.webp' className="w-screen h-[100vw] object-cover"/>
         <img src ='/image4.webp' className="w-screen h-[100vw] object-cover"/>
         <img src ='/image5.webp' className="w-screen h-[100vw] object-cover"/>
@@ -18,7 +27,7 @@ export default function StoryOfAlien(){
         <img src ='/image10.webp' className="w-screen h-[100vw] object-cover"/>
         <img src ='/image11.webp' className="w-screen h-[100vw] object-cover"/>
         <img src ='/image12.webp' className="w-screen h-[100vw] object-cover"/>
-
+ */}
 
 
      

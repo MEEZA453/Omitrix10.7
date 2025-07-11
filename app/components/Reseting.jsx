@@ -14,25 +14,24 @@ export default function Reseting() {
               // textRef.current.style.opacity = 1
       setTimeout(()=>{
         window.scrollTo(0 , 0);
+        setWatchState('OFF')
       },1000)
     } else if( watchState === 'ON') {
       setTimeout(()=>{
 
         styleRef.current.style.opacity = 0;
         // textRef.current.style.opacity = 0
-      },100)
+      },500)
     }
   }, [watchState]); // only run when watchState changes
 
   return (
     <div className='fixed top-0 z-[150]'>
       {/* <p   ref={textRef}  className='fixed top-[30vw] z-[160] left-[28vw]'>tap the watch to choose alien</p> */}
-      <div    ref={styleRef} className='h-screen w-screen bg-black/10  fixed top-0 z-[150]'>
-
-      </div>
-       <img  src='/image11.webp'
+    
+       <div  src='/image11.webp'
       ref={styleRef}
-      className="bg-white object-cover object-right duration-500 pointer-events-none h-screen w-screen "
+      className="bg-white object-cover object-right duration-1000 transition-opacity pointer-events-none h-screen w-screen "
     />
     </div>
    

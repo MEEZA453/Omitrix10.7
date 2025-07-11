@@ -11,6 +11,7 @@ import Reseting from './components/Reseting.jsx';
 import Control from './components/navber/ControlPenel/Control.jsx';
 import ArrowTransition from './components/ArrowTransition.jsx';
 import Loading from './components/Loading.jsx';
+import OffWindow from './components/OffWindow.jsx';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -40,6 +41,7 @@ export default function Home() {
 
           <Omnitrix />
           {/* <ArrowTransition /> */}
+          <OffWindow/>
           <Reseting />
           <Control />
           <StoryOfAlien />

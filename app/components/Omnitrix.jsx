@@ -23,15 +23,15 @@ useEffect(() => {
 }, []);
 const screen = {
     on : <div className=''>
-            <img ref={onScreenRef} className="fixed max-sm:scale-[3.18] max-sm:translate-y-[37.2vh]  w-[17.5vw] top-[15.66vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screen.svg"/>
+            <img ref={onScreenRef} className="fixed max-sm:scale-[3.18] max-sm:translate-y-[37.2vh] -translate-x-[0.05vw] translate-y-[0.6vw] scale-[1.156] w-[17.5vw] top-[15.66vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screen.svg"/>
     </div>,
 
     off : <div className=''>
-             <img ref={offScreenRef} className="fixed w-[17.5vw] max-sm:scale-[3.18] max-sm:translate-y-[37.2vh]  top-[15.7vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screenreset.svg"/> 
+             <img ref={offScreenRef} className="fixed w-[17.5vw] max-sm:scale-[3.18] max-sm:translate-y-[37.2vh] -translate-x-[0.05vw] translate-y-[0.6vw] scale-[1.156] top-[15.7vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screenreset.svg"/> 
     </div> ,
 
     reset :<div>
-        <img ref={resetScreenRef} className="fixed w-[17.5vw] max-sm:scale-[3.18] max-sm:translate-y-[37.2vh]  top-[15.7vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screenred.svg"/> 
+        <img ref={resetScreenRef} className="fixed w-[17.5vw] max-sm:scale-[3.18] max-sm:translate-y-[37.2vh] -translate-x-[0.05vw] translate-y-[0.6vw] scale-[1.156]  top-[15.7vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screenred.svg"/> 
     </div> ,
 //   <div>
 //         <img ref={resetScreenRef} className="fixed w-[17.5vw] max-sm:scale-[2] max-sm:translate-y-[37vh]  top-[15.7vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screenred.svg"/> 
@@ -72,9 +72,10 @@ switch (watchState) {
 
 useEffect(()=>{
     gsap.to('.base',{
-        rotate : 14*count,
+        rotate : 20*count,
       
     })
+       
 },[count])
 const watchfaceEnterAnime = ()=>{
 
@@ -122,15 +123,16 @@ useEffect(()=>{
 
     }
 })
-    return <div className="text-white ">
+    return <div className="text-white fixed z-[200] ">
         <div onClick={handleWatchClick} onMouseLeave={watchfaceLeaveAnime} onMouseEnter={watchfaceEnterAnime}  className="">
-            <img  className="base  fixed max-sm:scale-[2.1]  max-sm:translate-y-[37vh] top-[11.1vw] right-[39.25vw]  w-[26vw] lg:top-[11.38vw] lg:right-[39.35vw] z-[200]" src="/WatchParts/base22.svg"/>
-            <img  ref={screenRef} className="fixed max-sm:scale-[2]  max-sm:translate-y-[36.8vh]  w-[18vw] pointer-events-none top-[15.3vw] right-[43.3vw] z-[200]" src="/WatchParts/layer2.svg"/>
+            <img  className="base  fixed max-sm:scale-[2.1]  max-sm:translate-y-[37vh] lg:scale-[0.75] top-[11.1vw] right-[39.25vw]  w-[26vw] lg:top-[11.4vw] lg:right-[39.27vw] z-[200]" src="/WatchParts/base22.svg"/>
+
+            <img  ref={screenRef} className="fixed max-sm:scale-[2] scale-[0.70] max-sm:translate-y-[36.8vh]  w-[18vw] pointer-events-none top-[15.3vw] right-[43.3vw] z-[200]" src="/WatchParts/layer2.svg"/>
 
         {screen.reset}
         {screen.on}
         {screen.off}
-            <img  className="pointer-events-none max-sm:scale-[2] w-[18vw] lg:w-[19.5vw] max-sm:translate-y-[37.090vh]  top-[15.1vw] right-[43.20vw] fixed scale-91 lg:top-[14.70vw] lg:right-[42.50vw] z-[200]" src="/WatchParts/ring2.svg"/>
+            <img  className="pointer-events-none max-sm:scale-[2] scale-[0.68] w-[18vw] lg:w-[19.5vw] max-sm:translate-y-[37.090vh]  top-[15.1vw] right-[43.20vw] fixed scale-91 lg:top-[14.70vw] lg:right-[42.50vw] z-[200]" src="/WatchParts/ring2.svg"/>
             <RingOfAlien/>      
 
 
