@@ -23,7 +23,7 @@ useEffect(() => {
 }, []);
 const screen = {
     on : <div className=''>
-            <img ref={onScreenRef} className="fixed max-sm:scale-[3.18] max-sm:translate-y-[37.2vh] w-[17.5vw] top-[15.66vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screen.svg"/>
+            <img ref={onScreenRef} className="fixed max-sm:scale-[3.18] max-sm:translate-y-[37.2vh]  w-[17.5vw] top-[15.66vw] right-[43.5vw] z-[200] duration-700 transition-opacity" src="/WatchParts/screen.svg"/>
     </div>,
 
     off : <div className=''>

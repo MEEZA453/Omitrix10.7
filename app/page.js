@@ -39,7 +39,7 @@ export default function Home() {
           )}
 
           <Omnitrix />
-          <ArrowTransition />
+          {/* <ArrowTransition /> */}
           <Reseting />
           <Control />
           <StoryOfAlien />

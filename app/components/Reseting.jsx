@@ -27,12 +27,12 @@ export default function Reseting() {
   return (
     <div className='fixed top-0 z-[150]'>
       {/* <p   ref={textRef}  className='fixed top-[30vw] z-[160] left-[28vw]'>tap the watch to choose alien</p> */}
-      <div    ref={styleRef} className='h-screen w-screen bg-black/50 fixed top-0 z-[150]'>
+      <div    ref={styleRef} className='h-screen w-screen bg-white/70 fixed top-0 z-[150]'>
 
       </div>
-       <img  src='/image3.webp'
+       <img  src='/image11.webp'
       ref={styleRef}
-      className="bg-white object-cover object-center duration-500 pointer-events-none h-screen w-screen "
+      className="bg-white object-cover object-right duration-500 pointer-events-none h-screen w-screen "
     />
     </div>
    
