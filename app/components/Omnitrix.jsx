@@ -124,13 +124,13 @@ useEffect(()=>{
 })
     return <div className="text-white ">
         <div onClick={handleWatchClick} onMouseLeave={watchfaceLeaveAnime} onMouseEnter={watchfaceEnterAnime}  className="">
-            <img  className="base  fixed max-sm:scale-[2]  max-sm:translate-y-[37vh] top-[11.1vw] right-[39.25vw]  w-[26vw] lg:top-[11.38vw] lg:right-[39.35vw] z-[200]" src="/WatchParts/base.svg"/>
+            <img  className="base  fixed max-sm:scale-[2.1]  max-sm:translate-y-[37vh] top-[11.1vw] right-[39.25vw]  w-[26vw] lg:top-[11.38vw] lg:right-[39.35vw] z-[200]" src="/WatchParts/base22.svg"/>
             <img  ref={screenRef} className="fixed max-sm:scale-[2]  max-sm:translate-y-[36.8vh]  w-[18vw] pointer-events-none top-[15.3vw] right-[43.3vw] z-[200]" src="/WatchParts/layer2.svg"/>
 
         {screen.reset}
         {screen.on}
         {screen.off}
-            <img  className="pointer-events-none max-sm:scale-[2] w-[18vw] lg:w-[19.5vw] max-sm:translate-y-[37.090vh]  top-[15.1vw] right-[43.20vw] fixed scale-91 lg:top-[14.70vw] lg:right-[42.50vw] z-[200]" src="/WatchParts/ring.svg"/>
+            <img  className="pointer-events-none max-sm:scale-[2] w-[18vw] lg:w-[19.5vw] max-sm:translate-y-[37.090vh]  top-[15.1vw] right-[43.20vw] fixed scale-91 lg:top-[14.70vw] lg:right-[42.50vw] z-[200]" src="/WatchParts/ring2.svg"/>
             <RingOfAlien/>      
 
 
