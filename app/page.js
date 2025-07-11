@@ -1,4 +1,5 @@
 'use client';
+
 import { useEffect, useState } from 'react';
 import UpperNav from './components/navber/Upper.jsx';
 import LowerNav from './components/navber/Lower.jsx';
@@ -34,7 +35,7 @@ export default function Home() {
               }`}
             >
               <Loading />
-            // </div>
+            </div>
           )}
 
           <Omnitrix />

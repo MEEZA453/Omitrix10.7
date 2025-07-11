@@ -5,7 +5,7 @@ export default function ArrowTransition(){
 const {watchState} = useWatch();
 
     return <div className={`fixed z-[140] right-[6vw] duration-1000 ${watchState === 'ON' ? 'top-[-100vw]':'top-[140vh] ' }`}>
-        <img src="/arrowtransition.svg" className="scale-[1.5] sm-block hidden"/>
-        <img src='arrowtransitionsm.svg' className='sm:hidden scale-[1.5]'/>
+        <img src="/arrowtransition.svg" className="scale-[1.5]  "/>
+
     </div>
 }

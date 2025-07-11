@@ -54,7 +54,7 @@ export default function Loading() {
         className="screen fixed rotate-[720deg] max-sm:scale-[2] w-[15.4vw] max-sm:translate-y-[37vh] top-[15.5vw] right-[44.70vw] z-[200] duration-700 transition-opacity"
         src="/WatchParts/skelscreen.svg"
       />
-      <h1 id="loading-count" className="fixed top-[70%] left-[41%] text-2xl font-bold">
+      <h1 id="loading-count" className="fixed lg:left-[45.4vw] lg:top-[75%] top-[70%] left-[42.5%] text-2xl font-bold">
         0%
       </h1>
     </div>
