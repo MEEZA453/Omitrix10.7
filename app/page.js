@@ -31,7 +31,7 @@ export default function Home() {
         <div>
           {!hideLoading && (
             <div
-              className={`fixed z-[300] bg-black transition-opacity duration-1000 ${
+              className={`fixed z-[300] bg-white transition-opacity duration-1000 ${
                 loading ? 'opacity-100' : 'opacity-0'
               }`}
             >
