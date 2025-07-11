@@ -27,7 +27,7 @@ export default function Reseting() {
   return (
     <div className='fixed top-0 z-[150]'>
       {/* <p   ref={textRef}  className='fixed top-[30vw] z-[160] left-[28vw]'>tap the watch to choose alien</p> */}
-      <div    ref={styleRef} className='h-screen w-screen bg-white/70 fixed top-0 z-[150]'>
+      <div    ref={styleRef} className='h-screen w-screen bg-black/10  fixed top-0 z-[150]'>
 
       </div>
        <img  src='/image11.webp'
